@@ -8,7 +8,7 @@ const AdminDashboard = () => {
   <Navbar/>
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-green-900 text-white text-center py-8 my-2">
+      <header className="bg-[#203E11] text-white text-center py-8 my-2">
         <h1 className="text-3xl font-bold">
           Tableau de Bord - <span className="italic">Administrateur</span>
         </h1>

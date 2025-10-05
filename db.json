@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@mail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Startup One",
+      "email": "startup@mail.com",
+      "password": "1234",
+      "role": "startup"
+    },
+    {
+      "id": "3",
+      "name": "Investor One",
+      "email": "investor@mail.com",
+      "password": "1234",
+      "role": "investor"
+    },
+    {
+      "id": "4",
+      "name": "Visitor",
+      "email": "visitor@mail.com",
+      "password": "1234",
+      "role": "visitor"
+    },
+    {
+      "id": "e44b",
+      "name": "latifa ouamou",
+      "email": "ouamoulatifaa2024@gmail.com",
+      "password": "1234",
+      "role": "visitor"
+    },
+    {
+      "id": "9e50",
+      "name": "ouamoulatifaa",
+      "email": "ouamou2024@gmail.com",
+      "password": "12345",
+      "role": "visitor"
+    }
+  ],
+  "startups": [],
+  "events": [],
+  "messages": []
+}

@@ -7,7 +7,7 @@ const EventsPage = () => {
   return(
   <>
   <div><Navbar/>
-    <header className="bg-green-900 text-white text-center py-8 my-2">
+    <header className="bg-[#203E11] text-white text-center py-8 my-2">
         <h1 className="text-3xl font-bold">Événements Tech au Maroc</h1>
         <p className="mt-2">
           Découvrez les prochains événements, conférences et rencontres de
