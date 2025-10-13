@@ -43,7 +43,388 @@
       "role": "visitor"
     }
   ],
-  "startups": [],
-  "events": [],
-  "messages": []
+  "startups": [
+    {
+      "id": "1",
+      "name": "Tech Innov",
+      "image": "src/assets/17835.jpg",
+      "sector": "Intelligence Artificielle",
+      "description": "Solutions IA pour les entreprises."
+    },
+    {
+      "id": "2",
+      "name": "EcoFuture",
+      "image": "src/assets/AI.jpg",
+      "sector": "Énergie verte",
+      "description": "Technologies durables et écologiques."
+    },
+    {
+      "id": "3",
+      "name": "EduConnect",
+      "image ": "src/assets/17835.jpg",
+      "sector": "Edtech",
+      "description": "Plateforme d’apprentissage innovante."
+    },
+    {
+      "id": "4",
+      "name": "HealthPlus",
+      "image ": "src/assets/TEC.jpg",
+      "sector": "Santé numérique",
+      "description": "Solutions connectées pour les hôpitaux."
+    },
+    {
+      "id": "928a",
+      "name": "GGGGG",
+      "sector": "GGG",
+      "description": "GGG",
+      "image": "src/assets/17835.jpg"
+    },
+    {
+      "id": "3bd0",
+      "name": "vvv",
+      "sector": "Fintech",
+      "description": "hhj",
+      "image": "src/assets/image.png"
+    },
+    {
+      "id": "bff7",
+      "name": "iiiioii",
+      "sector": "Fintech",
+      "description": "klk",
+      "image": "src/assets/image.png"
+    },
+    {
+      "id": "f298",
+      "name": "latifa",
+      "sector": "Edtech",
+      "description": "hhh",
+      "image": "src/assets/image.png"
+    },
+    {
+      "id": "0648",
+      "name": "CHAIMA",
+      "sector": "E-commerce",
+      "description": "JJJJJJJJJJJ",
+      "image": "src/assets/image.png"
+    },
+    {
+      "id": "8496",
+      "name": "LAYIIIOPI",
+      "sector": "Intelligence Artificielle",
+      "description": "KJLKMK",
+      "image": ""
+    },
+    {
+      "id": "3f85",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294015/jpg%2C%20png%2C%20jpeg%2C%20webp/jcx2ysqrx5zlenj5mcez.png"
+    },
+    {
+      "id": "0fed",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294015/jpg%2C%20png%2C%20jpeg%2C%20webp/cxrublzpwop0tlyya65a.png"
+    },
+    {
+      "id": "57fe",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294025/jpg%2C%20png%2C%20jpeg%2C%20webp/ep8w9qogebtgrlu2wsll.png"
+    },
+    {
+      "id": "324e",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294034/jpg%2C%20png%2C%20jpeg%2C%20webp/xuzjtvybkj94pwvfnlri.png"
+    },
+    {
+      "id": "f33c",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294035/jpg%2C%20png%2C%20jpeg%2C%20webp/jstsp6dxzqdc5vrxcrku.png"
+    },
+    {
+      "id": "3d88",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294038/jpg%2C%20png%2C%20jpeg%2C%20webp/tjq6ufl3bsj7udoemxjn.png"
+    },
+    {
+      "id": "cb45",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294043/jpg%2C%20png%2C%20jpeg%2C%20webp/x9ljsge37h61gegpfbdr.png"
+    },
+    {
+      "id": "3ee8",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294061/jpg%2C%20png%2C%20jpeg%2C%20webp/qwkekgnbdt5bb4ojpa9b.png"
+    },
+    {
+      "id": "de02",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294061/jpg%2C%20png%2C%20jpeg%2C%20webp/qfqr9tae4vpqkp4jny3c.png"
+    },
+    {
+      "id": "82f6",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294061/jpg%2C%20png%2C%20jpeg%2C%20webp/gbod68u2mvrz8szwdukf.png"
+    },
+    {
+      "id": "0665",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294068/jpg%2C%20png%2C%20jpeg%2C%20webp/vwlmssswjikpe4fpanrk.png"
+    },
+    {
+      "id": "d4e6",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294079/jpg%2C%20png%2C%20jpeg%2C%20webp/wth1vkydupebfolkynoq.png"
+    },
+    {
+      "id": "527b",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294084/jpg%2C%20png%2C%20jpeg%2C%20webp/cfannoitjbc4mgd5ab1p.png"
+    },
+    {
+      "id": "473c",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294086/jpg%2C%20png%2C%20jpeg%2C%20webp/n2pdv6jksjq0zcvleehy.png"
+    },
+    {
+      "id": "5616",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294098/jpg%2C%20png%2C%20jpeg%2C%20webp/uevfbeh7poprsm7t0xgn.png"
+    },
+    {
+      "id": "2781",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294098/jpg%2C%20png%2C%20jpeg%2C%20webp/mparjlx0d7dhg4brppfp.png"
+    },
+    {
+      "id": "f01d",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294099/jpg%2C%20png%2C%20jpeg%2C%20webp/nqbsde2g0tcq2g80fl4l.png"
+    },
+    {
+      "id": "38f5",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294101/jpg%2C%20png%2C%20jpeg%2C%20webp/rmutca596equq5m8h0yk.png"
+    },
+    {
+      "id": "24f4",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294101/jpg%2C%20png%2C%20jpeg%2C%20webp/gn7viijewzpfbfz3jcj0.png"
+    },
+    {
+      "id": "2944",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294110/jpg%2C%20png%2C%20jpeg%2C%20webp/pci8czi8pwplsbbuhoje.png"
+    },
+    {
+      "id": "a5ec",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294110/jpg%2C%20png%2C%20jpeg%2C%20webp/hwya1f9yeccveyidjukn.png"
+    },
+    {
+      "id": "7853",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294111/jpg%2C%20png%2C%20jpeg%2C%20webp/sbxgbu9jocwkjqksfpew.png"
+    },
+    {
+      "id": "5a5a",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294111/jpg%2C%20png%2C%20jpeg%2C%20webp/mvt4qfl6ny4bfwkjxora.png"
+    },
+    {
+      "id": "bd47",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294111/jpg%2C%20png%2C%20jpeg%2C%20webp/e6ple7vbsb91avai3sbu.png"
+    },
+    {
+      "id": "769e",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294116/jpg%2C%20png%2C%20jpeg%2C%20webp/nikmthsqwrbzexvmxn7e.png"
+    },
+    {
+      "id": "9ed9",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294117/jpg%2C%20png%2C%20jpeg%2C%20webp/sjnqsf6lnytij42wjg39.png"
+    },
+    {
+      "id": "0a00",
+      "name": "kmpml",
+      "sector": "E-commerce",
+      "description": ",;lkl",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760294117/jpg%2C%20png%2C%20jpeg%2C%20webp/mgkqnrzqnsxsczzpuroo.png"
+    },
+    {
+      "id": "fe8e",
+      "name": "latifa",
+      "sector": "Art & Culture",
+      "description": "latifa",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760302925/jpg%2C%20png%2C%20jpeg%2C%20webp/tl925hxouuj4o4ecjnup.png"
+    },
+    {
+      "id": "7da4",
+      "name": "latifa",
+      "sector": "Art & Culture",
+      "description": "latifa",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760302926/jpg%2C%20png%2C%20jpeg%2C%20webp/rb42yrmkilwefd0ikaiq.png"
+    },
+    {
+      "id": "55be",
+      "name": "latifa",
+      "sector": "Art & Culture",
+      "description": "latifa",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760302931/jpg%2C%20png%2C%20jpeg%2C%20webp/lwu4mq3jshsmxbrtktiy.png"
+    },
+    {
+      "id": "f66a",
+      "name": "latifa",
+      "sector": "Art & Culture",
+      "description": "latifa",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760302933/jpg%2C%20png%2C%20jpeg%2C%20webp/iwv0myupznbfdkf1baxx.png"
+    },
+    {
+      "id": "d0e0",
+      "name": "latifa",
+      "sector": "Art & Culture",
+      "description": "latifa",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760302933/jpg%2C%20png%2C%20jpeg%2C%20webp/imcbaepytmbdqks4bz3j.png"
+    },
+    {
+      "id": "f152",
+      "name": "hkjj",
+      "sector": "Edtech",
+      "description": "jkjkj",
+      "image": ""
+    }
+  ],
+  "events": [
+    {
+      "id": "1760140241247",
+      "title": "JKJKL",
+      "description": "JLKL",
+      "date": "2025-10-17",
+      "location": "CASABLANCA"
+    },
+    {
+      "id": "1760140284705",
+      "title": "KLK",
+      "description": "JLO",
+      "date": "2025-10-01",
+      "location": "?????"
+    },
+    {
+      "id": "1760140326163",
+      "title": "HNA",
+      "description": "JLKJ",
+      "date": "2025-10-16",
+      "location": "??????"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1760138015564",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "bonjoure",
+      "createdAt": "2025-10-10T23:13:35.564Z"
+    },
+    {
+      "id": "1760138023496",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "vvvvvv",
+      "createdAt": "2025-10-10T23:13:43.496Z"
+    },
+    {
+      "id": "1760138075980",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "KJLJLK",
+      "createdAt": "2025-10-10T23:14:35.980Z"
+    },
+    {
+      "id": "1760138960997",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "K",
+      "createdAt": "2025-10-10T23:29:20.997Z"
+    },
+    {
+      "id": "1760288982961",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "jjjjjjjjjjjjjjjjjj",
+      "createdAt": "2025-10-12T17:09:42.961Z"
+    },
+    {
+      "id": "1760289029501",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "NNNNNNNNNNNNNNNN",
+      "createdAt": "2025-10-12T17:10:29.501Z"
+    },
+    {
+      "id": "1760310761930",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "fgffg",
+      "createdAt": "2025-10-12T23:12:41.930Z"
+    },
+    {
+      "id": "1760382110287",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "JJLKJLKMLK",
+      "createdAt": "2025-10-13T19:01:50.287Z"
+    }
+  ]
 }

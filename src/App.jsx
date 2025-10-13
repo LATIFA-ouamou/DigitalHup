@@ -1,7 +1,7 @@
  import AuthPage from "./pages/AuthPage"
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
+import Home from "./pages/home/Home"
 import EventPage from "./Evenements/EventsPage"
 import FormAjouteEvent from "./Evenements/FormAjouteEvent"
 import StartupForm from "./pages/home/StartupForm"

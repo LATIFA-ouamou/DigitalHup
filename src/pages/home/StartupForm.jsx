@@ -1,63 +1,155 @@
-import React from 'react';
-import Footer from './Footer';
-import Navbar from './Navbar';
+
+import React, { useState } from "react";
+import axios from "axios";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { uploadToCloudinary } from "./uploadToCloudinary";
 
 const StartupForm = () => {
+  const [name, setName] = useState("");
+  const [sector, setSector] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState(null);
+  const [message, setMessage] = useState("");
+  const [preview, setPreview] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      let imageUrl = "";
+
+      // Upload sur Cloudinary si un fichier est sélectionné
+      if (image) {
+        imageUrl = await uploadToCloudinary(image);
+      }
+
+      const newStartup = {
+        name,
+        sector,
+        description,
+        image: imageUrl,
+      };
+
+      await axios.post("http://localhost:5000/startups", newStartup);
+
+      setMessage("✅ Startup ajoutée avec succès !");
+      setName("");
+      setSector("");
+      setDescription("");
+      setImage(null);
+      setPreview(null);
+    } catch (error) {
+      console.error(error);
+      setMessage("❌ Erreur lors de l'ajout de la startup");
+    }
+  };
+
   return (
-   <><Navbar/> <div className="max-w-xl mx-auto mt-10 p-6 bg-white shadow-md rounded-md">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">ajouter un startup</h2>
-      <form className="space-y-4">
-        {/* Titre */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Titre</label>
-          <input
-            type="text"
-            placeholder="nom de startup"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
+    <>
+      <Navbar />
+      <div className="max-w-2xl mx-auto mt-12 p-8 bg-white shadow-lg rounded-xl">
+        <h2 className="text-3xl font-bold text-green-800 mb-6 text-center">
+          Ajouter une startup
+        </h2>
 
-        {/* Type */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Type</label>
-          <input
-            type="text"
-            placeholder="type de startup"
-className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
+        {message && (
+          <p className="text-center mb-4 font-semibold text-green-600">
+            {message}
+          </p>
+        )}
 
-        {/* Description */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Description</label>
-          <textarea
-            placeholder="Description"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
+        <form onSubmit={handleSubmit} className="space-y-5">
+          {/* Nom */}
+          <div>
+            <label className="  block text-sm font-medium text-gray-700 mb-1">
+              Nom de la startup
+            </label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Nom de la startup"
+              className=" bg-[#B0B9A8] w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:[#203E11] outline-none shadow-sm"
+              required
+            />
+          </div>
 
-        {/* Logo */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Logo</label>
-          <input
-            type="file"
-            accept="image/*"
-            className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
- />
-        </div>
+          {/* Secteur */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Secteur
+            </label>
+            <select
+              value={sector}
+              onChange={(e) => setSector(e.target.value)}
+              className=" bg-[#B0B9A8] w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:[#203E11] outline-none shadow-sm"
+              required
+            >
+              <option value="">Sélectionne un secteur</option>
+              <option value="Intelligence Artificielle">🤖 Intelligence Artificielle</option>
+              <option value="Fintech">💳 Fintech</option>
+              <option value="E-commerce">🛒 E-commerce</option>
+              <option value="Edtech">🎓 Edtech</option>
+              <option value="Santé numérique">🏥 Santé numérique</option>
+              <option value="Énergie verte">🌱 Énergie verte</option>
+              <option value="Art & Culture">🎨 Art & Culture</option>
+            </select>
+          </div>
 
-        {/* Bouton Publier */}
-        <button
-          type="button"
-          className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition"
->
-          Publier
-        </button>
-      </form>
-    </div>
-    <Footer/>
+          {/* Description */}
+          <div>
+            <label className="  block text-sm font-medium text-gray-700 mb-1">
+              Description
+            </label>
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder="Décris ta startup..."
+              className=" bg-[#B0B9A8] w-full border border-gray-300 rounded-lg px-4 py-2 h-28 resize-none focus:ring-2 focus:[#203E11] outline-none shadow-sm"
+              required
+            />
+          </div>
+
+          {/* Logo */}
+          <div>
+            <label className=" bg-[#B0B9A8] block text-sm font-medium text-gray-700 mb-1">
+              Logo (upload sur Cloudinary)
+            </label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => {
+                const file = e.target.files[0];
+                setImage(file);
+                setPreview(URL.createObjectURL(file));
+              }}
+              className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg[#203E11]"
+            />
+          </div>
+
+          {/* Aperçu du logo */}
+          {preview && (
+            <div className="mt-3 flex justify-center">
+              <img
+                src={preview}
+                alt="Preview"
+                className="w-32 h-32 object-cover rounded-xl shadow-md"
+              />
+            </div>
+          )}
+
+          <button
+            type="submit"
+            className="w-full bg-[#203E11] text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition-shadow shadow-md"
+          >
+            Publier la startup
+          </button>
+        </form>
+      </div>
+      <Footer />
     </>
-);
+  );
 };
 
 export default StartupForm;

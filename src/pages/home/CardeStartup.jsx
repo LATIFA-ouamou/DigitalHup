@@ -1,33 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-function CardeStartup() {
+function CardeStartup({ startup }) {
+  // startup peut être undefined pendant loading => guard
+  if (!startup) return null;
+
+  const { name, sector, description, image } = startup;
+
   return (
-   <>
-   
-   
-   {/* Grille de cartes */}
+    <div className="bg-[#C9E3CC] rounded-md shadow p-4">
+      <div className="h-40 w-full overflow-hidden rounded-md mb-3">
+        <img
+          src={image || '/images/placeholder.png'}
+          alt={name}
+          className="w-full h-full object-cover"
+        />
+      </div>
 
-        
-          {/* Carte 1 */}
-        <div className="border-l-5 border-[#203E11] 0 rounded-md overflow-hidden shadow-sm bg-green-100">
-          <img
-            src="src/assets/TEC.jpg"
-            alt="TechMaroc"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="font-bold text-green-900 text-lg">TechMaroc</h3>
-            <p className="text-yellow-600 font-semibold">
-              Intelligence Artificielle
-            </p>
-            <p className="text-gray-700 text-sm mt-2">
-              Plateforme d'IA pour l'optimisation des processus industriels.
-            </p>
-          </div>
-        </div>
-
-   </>
-  )
+      <h3 className="font-bold text-green-900 text-lg">{name}</h3>
+      <p className="text-yellow-600 font-semibold">{sector}</p>
+      <p className="text-gray-700 text-sm mt-2">{description}</p>
+    </div>
+  );
 }
 
-export default CardeStartup
+export default CardeStartup;
