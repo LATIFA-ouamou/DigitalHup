@@ -1,64 +1,57 @@
 // src/redux/eventsSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-// Simuler une API ou récupérer depuis une vraie API
-export const fetchEvents = createAsyncThunk(
-  "events/fetchEvents",
-  async () => {
-    const stored = localStorage.getItem("events");
-    return stored ? JSON.parse(stored) : [];
-  }
-);
+const API_URL = "http://localhost:5000/events";
 
-export const addEvent = createAsyncThunk(
-  "events/addEvent",
-  async (newEvent, { getState }) => {
-    const state = getState();
-    const currentEvents = state.events.list;
-    const updatedEvents = [newEvent, ...currentEvents];
-    localStorage.setItem("events", JSON.stringify(updatedEvents));
-    return newEvent;
-  }
-);
+// Récupérer tous les événements
+export const fetchEvents = createAsyncThunk("events/fetchEvents", async () => {
+  const res = await axios.get(API_URL);
+  return res.data;
+});
+
+// Ajouter un événement
+export const addEvent = createAsyncThunk("events/addEvent", async (newEvent) => {
+  const res = await axios.post(API_URL, newEvent);
+  return res.data;
+});
+
+// Supprimer un événement
+export const deleteEvent = createAsyncThunk("events/deleteEvent", async (id) => {
+  await axios.delete(`${API_URL}/${id}`);
+  return id;
+});
 
 const eventsSlice = createSlice({
   name: "events",
-  initialState: {
-    list: [],
-    loading: false,
-    error: null,
-    success: null,
-  },
+  initialState: { list: [], status: "idle", error: null },
   reducers: {},
   extraReducers: (builder) => {
     builder
       // fetchEvents
       .addCase(fetchEvents.pending, (state) => {
-        state.loading = true;
+        state.status = "loading";
         state.error = null;
       })
       .addCase(fetchEvents.fulfilled, (state, action) => {
-        state.loading = false;
+        state.status = "succeeded";
         state.list = action.payload;
       })
       .addCase(fetchEvents.rejected, (state, action) => {
-        state.loading = false;
-        state.error = "Erreur lors du chargement des événements";
+        state.status = "failed";
+        state.error = action.error.message;
       })
+
       // addEvent
-      .addCase(addEvent.pending, (state) => {
-        state.loading = true;
-        state.error = null;
-        state.success = null;
-      })
       .addCase(addEvent.fulfilled, (state, action) => {
-        state.loading = false;
         state.list = [action.payload, ...state.list];
-        state.success = "Événement ajouté avec succès !";
       })
-      .addCase(addEvent.rejected, (state, action) => {
-        state.loading = false;
-        state.error = "Erreur lors de l'ajout de l'événement";
+
+      // deleteEvent
+      .addCase(deleteEvent.fulfilled, (state, action) => {
+        state.list = state.list.filter(
+          (e) => e._id !== action.payload && e.id !== action.payload
+        );
       });
   },
 });
