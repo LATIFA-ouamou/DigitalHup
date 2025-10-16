@@ -8,39 +8,28 @@
       "role": "admin"
     },
     {
-      "id": "2",
-      "name": "Startup One",
-      "email": "startup@mail.com",
+      "id": "1760555523774",
+      "name": "lama",
+      "email": "KHADIJA@gmail.com",
       "password": "1234",
-      "role": "startup"
+      "role": "startup",
+      "createdAt": "2025-10-15T19:12:03.774Z"
     },
     {
-      "id": "3",
-      "name": "Investor One",
-      "email": "investor@mail.com",
+      "id": "1760557024479",
+      "name": "fati",
+      "email": "fati@mail.com",
       "password": "1234",
-      "role": "investor"
+      "role": "investor",
+      "createdAt": "2025-10-15T19:37:04.479Z"
     },
     {
-      "id": "4",
-      "name": "Visitor",
-      "email": "visitor@mail.com",
+      "id": "1760557142410",
+      "name": "hajar ",
+      "email": "hajar@mail.com",
       "password": "1234",
-      "role": "visitor"
-    },
-    {
-      "id": "e44b",
-      "name": "latifa ouamou",
-      "email": "ouamoulatifaa2024@gmail.com",
-      "password": "1234",
-      "role": "visitor"
-    },
-    {
-      "id": "9e50",
-      "name": "ouamoulatifaa",
-      "email": "ouamou2024@gmail.com",
-      "password": "12345",
-      "role": "visitor"
+      "role": "visitor",
+      "createdAt": "2025-10-15T19:39:02.410Z"
     }
   ],
   "startups": [
@@ -78,6 +67,41 @@
       "sector": "E-commerce",
       "description": "JJJJJJJJJJJ",
       "image": "src/assets/image.png"
+    },
+    {
+      "id": "2c1b",
+      "name": "klkok",
+      "sector": "Santé numérique",
+      "description": "nkjhkj",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760488156/jpg%2C%20png%2C%20jpeg%2C%20webp/bhm480gxzly3ofihgx0v.jpg"
+    },
+    {
+      "id": "4b91",
+      "name": "klk",
+      "sector": "Énergie verte",
+      "description": "lklk",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760488203/jpg%2C%20png%2C%20jpeg%2C%20webp/axpq56inbj1o4rrxlude.jpg"
+    },
+    {
+      "id": "3a45",
+      "name": "hjjhhj",
+      "sector": "Santé numérique",
+      "description": "kkk",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760488243/jpg%2C%20png%2C%20jpeg%2C%20webp/vvexvxxusvm0rrztnw20.jpg"
+    },
+    {
+      "id": "de4e",
+      "name": "jjj",
+      "sector": "Art & Culture",
+      "description": "jj",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760488471/jpg%2C%20png%2C%20jpeg%2C%20webp/eogbkepbpwecpa50e2wg.png"
+    },
+    {
+      "id": "a0bf",
+      "name": "kkk",
+      "sector": "E-commerce",
+      "description": "klkkk",
+      "image": "https://res.cloudinary.com/dl7o4c4ri/image/upload/v1760488597/jpg%2C%20png%2C%20jpeg%2C%20webp/w29xprt49qwvsvp4wfkq.png"
     }
   ],
   "events": [
@@ -89,18 +113,63 @@
       "location": "CASABLANCA"
     },
     {
-      "id": "1760140326163",
-      "title": "HNA",
-      "description": "JLKJ",
-      "date": "2025-10-16",
-      "location": "??????"
-    },
-    {
       "id": "1760455796682",
       "title": "celebration ",
       "description": "jlkjlksùoùia",
       "date": "2025-10-31",
       "location": "agadir"
+    },
+    {
+      "id": "1760485781023",
+      "title": "llù",
+      "description": "mlmlùùmm*mm^$^$rê",
+      "date": "2025-10-30",
+      "location": "lp^p"
+    },
+    {
+      "id": "1760567182890",
+      "title": "hhhh",
+      "description": "jjj",
+      "date": "2025-10-08",
+      "location": "fes"
+    }
+  ],
+  "mesEvenements": [
+    {
+      "id": "1760567575152",
+      "userId": "1",
+      "eventId": "1760567559438",
+      "title": "JKJKL",
+      "description": "JLKL",
+      "date": "2025-10-17",
+      "location": "CASABLANCA"
+    },
+    {
+      "id": "1760568480364",
+      "userId": "1",
+      "eventId": "1760140241247",
+      "title": "JKJKL",
+      "description": "JLKL",
+      "date": "2025-10-17",
+      "location": "CASABLANCA"
+    },
+    {
+      "id": "1760568484463",
+      "userId": "1",
+      "eventId": "1760568480364",
+      "title": "JKJKL",
+      "description": "JLKL",
+      "date": "2025-10-17",
+      "location": "CASABLANCA"
+    },
+    {
+      "id": "1760607390564",
+      "userId": "1",
+      "eventId": "1760485781023",
+      "title": "llù",
+      "description": "mlmlùùmm*mm^$^$rê",
+      "date": "2025-10-30",
+      "location": "lp^p"
     }
   ],
   "messages": [
@@ -180,6 +249,90 @@
       "role": "visitor",
       "content": "KLL",
       "createdAt": "2025-10-14T14:54:27.421Z"
+    },
+    {
+      "id": "1760539047096",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "klmkk<p",
+      "createdAt": "2025-10-15T14:37:27.096Z"
+    },
+    {
+      "id": "1760539079026",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "lkmlkopkp",
+      "createdAt": "2025-10-15T14:37:59.026Z"
+    },
+    {
+      "id": "1760555590127",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "kjljokol",
+      "createdAt": "2025-10-15T19:13:10.127Z"
+    },
+    {
+      "id": "1760556426710",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "jkjjij",
+      "createdAt": "2025-10-15T19:27:06.710Z"
+    },
+    {
+      "id": "1760559633692",
+      "name": "Utilisateur",
+      "role": "visitor",
+      "content": "jjokipo",
+      "createdAt": "2025-10-15T20:20:33.692Z"
+    },
+    {
+      "id": "1760559656380",
+      "name": "Utilisateur",
+      "role": "admin",
+      "content": "kjhkjhk",
+      "createdAt": "2025-10-15T20:20:56.380Z"
+    },
+    {
+      "id": "1760561451430",
+      "name": "Utilisateur",
+      "role": "investor",
+      "content": ",lkjolkmok",
+      "createdAt": "2025-10-15T20:50:51.430Z"
+    },
+    {
+      "id": "1760561706129",
+      "name": "Utilisateur",
+      "role": "admin",
+      "content": "kkkk",
+      "createdAt": "2025-10-15T20:55:06.129Z"
+    },
+    {
+      "id": "1760561786361",
+      "name": "Utilisateur",
+      "role": "admin",
+      "content": "hhh",
+      "createdAt": "2025-10-15T20:56:26.361Z"
+    },
+    {
+      "id": "1760561860162",
+      "name": "Utilisateur",
+      "role": "admin",
+      "content": "hhhh",
+      "createdAt": "2025-10-15T20:57:40.162Z"
+    },
+    {
+      "id": "1760561867661",
+      "name": "Utilisateur",
+      "role": "admin",
+      "content": "hhhh",
+      "createdAt": "2025-10-15T20:57:47.661Z"
+    },
+    {
+      "id": "1760562487238",
+      "name": "Utilisateur",
+      "role": "admin",
+      "content": "kkkk",
+      "createdAt": "2025-10-15T21:08:07.238Z"
     }
   ]
 }

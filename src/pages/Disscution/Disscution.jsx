@@ -10,6 +10,9 @@ function Disscution() {
     (state) => state.messages
   );
 
+  // ✅ On récupère l'utilisateur et son rôle depuis Redux
+  const { user, role, isAuthenticated } = useSelector((state) => state.auth);
+
   const [content, setContent] = useState("");
 
   useEffect(() => {
@@ -20,10 +23,16 @@ function Disscution() {
     e.preventDefault();
     if (!content.trim()) return;
 
+    // ⚠️ Si l’utilisateur n’est pas connecté, on bloque la publication
+    if (!isAuthenticated) {
+      alert("Vous devez être connecté pour publier un message.");
+      return;
+    }
+
     const newMessage = {
       id: Date.now().toString(),
-      name: "Utilisateur", // tu peux remplacer par le nom du user connecté
-      role: "visitor", // ou "startup", "admin"
+      name: user?.username || "Utilisateur",
+      role: role || "visitor",
       content,
       createdAt: new Date().toISOString(),
     };
@@ -62,7 +71,9 @@ function Disscution() {
                       ? "bg-green-900"
                       : msg.role === "startup"
                       ? "bg-green-700"
-                      : "bg-green-500"
+                      : msg.role === "investor"
+                      ? "bg-green-500"
+                      : "bg-gray-400"
                   }`}
                 >
                   {msg.role.charAt(0).toUpperCase() + msg.role.slice(1)}
@@ -73,24 +84,30 @@ function Disscution() {
           ))}
         </main>
 
-        {/* Formulaire d'ajout */}
-        <div className="max-w-3xl mx-auto px-4 py-6">
-          <div className="bg-green-100 rounded-lg p-4">
-            <textarea
-              className="w-full border rounded p-3"
-              rows="3"
-              placeholder="Partagez vos idées, posez vos questions..."
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-            ></textarea>
-            <button
-              onClick={handleSubmit}
-              className="mt-3 bg-green-900 text-white px-4 py-2 rounded hover:bg-green-800"
-            >
-              Publier le message
-            </button>
+        {/* ✅ Zone d’écriture affichée seulement si connecté */}
+        {isAuthenticated ? (
+          <div className="max-w-3xl mx-auto px-4 py-6">
+            <div className="bg-green-100 rounded-lg p-4">
+              <textarea
+                className="w-full border rounded p-3"
+                rows="3"
+                placeholder="Partagez vos idées, posez vos questions..."
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
+              ></textarea>
+              <button
+                onClick={handleSubmit}
+                className="mt-3 bg-green-900 text-white px-4 py-2 rounded hover:bg-green-800"
+              >
+                Publier le message
+              </button>
+            </div>
           </div>
-        </div>
+        ) : (
+          <p className="text-center text-gray-600 pb-10">
+            Connectez-vous pour participer à la discussion.
+          </p>
+        )}
       </div>
       <Footer />
     </>
