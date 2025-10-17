@@ -1,11 +1,4 @@
-// import { configureStore } from "@reduxjs/toolkit";
-// import startupsReducer from "./startupSlice";
 
-// const store = configureStore({
-//   reducer: {
-//     startups: startupsReducer,
-//   },
-// });
 
 // export default store;
 import { configureStore } from "@reduxjs/toolkit";
